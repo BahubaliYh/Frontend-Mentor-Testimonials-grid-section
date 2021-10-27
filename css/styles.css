@@ -22,6 +22,7 @@ body{
   background-color: #D7DEE6;
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-size: 13px;
+  line-height: 18px;
 }
 
 h1{
@@ -36,8 +37,8 @@ p{
 .container{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, auto);
-  gap: 10px;
+  grid-template-rows: repeat(2, 270px);
+  gap: 20px;
   max-width: 1000px;
 }
 
@@ -64,16 +65,19 @@ p{
 
 .profile-name{
   color:hsl(0, 0%, 81%);
+  font-weight: 600;
 }
 
 .profile-desc{
   color:hsl(0, 0%, 81%);
   opacity: .5;
+  font-weight: 600;
 }
 
 .card-title{
   font-size: 16px;
   color:hsl(210, 46%, 95%);
+  font-weight: 600;
 }
 
 .card-desc{
@@ -83,8 +87,10 @@ p{
 
 .one{
   grid-column: 1/3;
-  /* background-color: #733FC8; */
   background-color: hsl(263, 55%, 52%);
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 0px 100px;
 }
 
 .two{
@@ -99,10 +105,30 @@ p{
 
 .four{
   grid-column: 2/4;
+  background-color: hsl(219, 29%, 14%);
 }
 
 .five{
   grid-column: 4/5;
   grid-row: 1/3;
+  background-color:hsl(0, 0%, 100%);
+}
+
+.three .profile-name, .five .profile-name {
+  color: hsl(217, 19%, 35%);
+}
+
+.three .profile-desc, .five .profile-desc {
+  color: hsl(217, 19%, 35%);
+  opacity: .5;
+}
+
+.three .card-title, .five .card-title {
+  color: hsl(217, 19%, 35%);
+}
+
+.three .card-desc, .five .card-desc {
+  color: hsl(217, 19%, 35%);
+  opacity: .7;
 }
 
